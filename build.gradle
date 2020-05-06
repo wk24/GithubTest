@@ -4,13 +4,19 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        mavenCentral()
+        maven {
+            url 'http://192.168.186.4:8081/nexus/content/repositories/releases'
+        }
+        maven {
+            url 'http://192.168.186.4:8081/nexus/content/repositories/snapshots/'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
-        
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     }
 }
 
@@ -18,7 +24,13 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        mavenCentral()
+        maven {
+            url 'http://192.168.186.4:8081/nexus/content/repositories/releases'
+        }
+        maven {
+            url 'http://192.168.186.4:8081/nexus/content/repositories/snapshots/'
+        }
     }
 }
 

@@ -1,2 +1,2 @@
-include ':app', ':mylibrary'
+include ':app', ':mylibrary', ':library-update'
 rootProject.name='GithubTest'

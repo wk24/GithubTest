@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progresss" format="integer"/>
+        <attr name="maxs" format="integer" />
+
+        <attr name="progress_unreached_colors" format="color" />
+        <attr name="progress_reached_colors" format="color" />
+
+        <attr name="progress_reached_bar_heights" format="dimension" />
+        <attr name="progress_unreached_bar_heights" format="dimension" />
+
+        <attr name="progress_text_sizes" format="dimension" />
+        <attr name="progress_text_colors" format="color" />
+
+        <attr name="progress_text_offsets" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+</resources>
